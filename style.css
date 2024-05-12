@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 32, 32);
+    color: #fff;
+    font-family: consolas, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cursor_shade{
+    position: absolute;
+    background-color: rgba(0, 80, 80, 0.103);
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    box-shadow: 0px 0px 20rem rgba(0, 80, 80, 0.664);
+    z-index: -1;    
+}
+
+.music-controller{
+    position: absolute;
+    margin: 2% 3% 0 0;
+    top: 0;
+    right: 0;
+}
+.music-controller button{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(0, 53, 53);
+    border: 1px solid rgb(0, 80, 80);
+    border-radius: 0.3rem;
+}
+.music-controller button:hover{
+    cursor: pointer;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+}
+.main-info{
+    border-radius: 1rem;
+    background-color: rgb(0, 54, 54);
+    height: 90%;
+    width: 80%;
+    min-width: 400px;
+}
+.top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.avatar-centerer{
+    width: 60%;
+    height: 100%;
+}
+.avatar{
+    width: 60%;
+}
+.top-info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.card-bottom{
+    height: 60%;
+    width: calc(100% - 4rem);
+    padding: 2rem;
+}
+
+
+.right-side{
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+.content{
+    padding-top: 1rem;
+    width: 80%;
+    min-height: 100vh;
+    
+}
+
+.main-card{
+    margin: 5% 0 10% 0;
+    height: 40%;
+    width: calc(100% - 4rem);
+    border: 2px solid rgb(0, 80, 80);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.card{
+    width: calc(100%-2rem);
+    min-height: 5rem;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+.card:hover{
+    background-color: rgba(0, 94, 94, 0.219);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.languages{
+    width: 100%;
+    display: flex;
+
+}
+.language{
+    margin: 0 0.2rem 0 0.2rem;
+    height: 1.5rem;
+    background-color: rgb(0, 53, 53);
+    border: 1px solid rgb(0, 80, 80);
+    border-radius: 1rem;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JS, .Cs{
+    width: 2rem;
+}
+.JSX, .Cpp, .PHP, .CSS{
+    width: 3rem;
+}
+.Notes, .HTML{
+    width: 4rem;
+}
+.OpenGl,.Blender{
+    width: 5rem;
+}
+
+@media screen and (max-width: 1200px){
+    .avatar{
+        width: 10rem;
+    }
+    .left-side{
+        width: 50%;
+    }
+    .right-side{
+        width: 50%;
+
+    }
+
+    
+
+}
+@media screen and (max-width: 900px){
+    body{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        font-size: 0.8rem;
+    }
+    .avatar{
+        width: 8rem;
+    }
+    .left-side, .right-side{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .left-side{
+        height: 100vh;
+    }
+
+    .content{
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        
+    }
+    .main-card{
+        width: 80%;
+    }
+}
+
