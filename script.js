@@ -16,5 +16,5 @@ function toggleMusic() {
       const mouseY = e.clientY;
   
       object.style.left = mouseX - (5*16) + 'px';
-      object.style.top = mouseY - (4*16) + 'px';
+      object.style.top = mouseY - (5*16) + 'px';
   });
